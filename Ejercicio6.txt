@@ -1,0 +1,55 @@
+!pip install pandas
+
+import pandas as pd
+
+
+
+Ciudades = ['ciudadA', 'ciudadB', 'ciudadC']
+Incidentes = ['Accidente de tráfico', None, 'Desastre natural']
+Numero_de_Incidentes = [10, 6, 20]
+
+data = {'Ciudades': Ciudades, 
+        'Incidentes': Incidentes,
+       'Numero_de_Incidentes': Numero_de_Incidentes}
+df = pd.DataFrame(data)
+
+df
+
+
+
+
+print(Incidentes[1])
+
+
+
+
+
+df['Incidentes'] = ['Accidente de tráfico', 'Desconocido', 'Desastre natural']
+
+
+
+
+
+df
+
+
+
+
+df['Incidentes'].value_counts()
+
+
+
+
+
+df['Numero_de_Incidentes'].sum()
+
+
+
+
+
+
+df[['Incidentes','Numero_de_Incidentes']]
+
+
+
+#esta separado por bloques
