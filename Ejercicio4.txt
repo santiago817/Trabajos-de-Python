@@ -1,0 +1,16 @@
+
+
+class vehicle:
+    def __init__(self, name,max_speed): 
+        self.name = name
+        self.max_speed = max_speed
+
+    def move(self):
+        print("El vehículo se está moviendo")
+
+class car(vehicle):
+    def move(self):
+        print("El coche está moviéndose a una velocidad máxima de ",self.max_speed," km/h") 
+
+my_car = car("Toyota",180)
+my_car.move()
