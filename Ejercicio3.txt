@@ -1,0 +1,37 @@
+
+class BankAccount:
+    def __init__(self, nombre):
+        self.__balance = 0
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            print("Se pudo retirar el dinero", amount)
+            self.__balance -= amount
+        else:
+            print("No se pudo retirar el dinero")
+
+    def get_balance(self):
+        return self.__balance
+
+
+cuenta = BankAccount("cuenta")
+
+
+cuenta.deposit(100)
+
+
+cuenta.withdraw(50)
+cuenta.withdraw(100)
+print("El saldo actual es de:", cuenta.get_balance(),"pesos")
+
+
+
+
+
+
+
+
