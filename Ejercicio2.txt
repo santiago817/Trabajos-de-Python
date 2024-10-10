@@ -1,0 +1,18 @@
+class Vehiculo:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    def arrancar(self):
+        print("El vehículo está en marcha")
+
+class Coche(Vehiculo): 
+    def arrancar(self):
+        print("El coche está en marcha")
+
+
+el_vehiculo = Vehiculo("Vehiculo")
+el_coche = Coche("Coche")
+
+
+el_vehiculo.arrancar() 
+el_coche.arrancar() 
